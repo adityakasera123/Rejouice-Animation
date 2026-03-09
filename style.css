@@ -1,0 +1,68 @@
+@font-face {
+  font-family: nb;
+  src: url(./SuisseIntl-Regular.woff2);
+}
+@font-face {
+  font-family: rejoy;
+  src: url(./SuisseIntl-Light.woff2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: Arial, sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+#page1{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: #985f5f;
+}
+#page1 video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+#page1-content{
+  height: 100%;
+  width: 100%;
+color: white;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+ padding-bottom: 4vw;
+} 
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 3vw 3vw;
+}
+nav h3{
+  font-size: 1.4w;
+  font-family: nb;
+  font-weight: 100;
+}
+nav h4{
+  font-size: 1.4w;
+  font-weight: 100;
+}
+#page1-content h1{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 31vw;
+  font-weight:400;
+  color: #fff;
+letter-spacing: -18px;
+}
