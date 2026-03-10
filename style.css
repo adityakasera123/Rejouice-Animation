@@ -2,10 +2,6 @@
   font-family: nb;
   src: url(./SuisseIntl-Regular.woff2);
 }
-@font-face {
-  font-family: rejoy;
-  src: url(./SuisseIntl-Light.woff2);
-}
 
 * {
   margin: 0;
@@ -32,11 +28,12 @@ html, body {
   position: absolute;
 }
 #page1-content{
+
   height: 100%;
   width: 100%;
 color: white;
   position: relative;
-  z-index: 2;
+  z-index: 10;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -51,18 +48,40 @@ nav{
   padding: 3vw 3vw;
 }
 nav h3{
-  font-size: 1.4w;
+  font-size: 1.4vw;
   font-family: nb;
   font-weight: 100;
 }
 nav h4{
-  font-size: 1.4w;
+  font-size: 1.4vw;
   font-weight: 100;
 }
 #page1-content h1{
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 31vw;
   font-weight:400;
   color: #fff;
 letter-spacing: -18px;
+}
+
+#cursor{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85px;
+  width: 85px;
+  background-color: #ff5f38;
+  position: fixed;
+  border-radius: 50px;
+  z-index: -1;
+   transform: translate(-50%, -50%);
+}
+#cursor h2{
+  font-size: 1.3vw;
+  color: #111;
+}
+#page2{
+  height: 100vh;
+  width: 100%;
+  background-color: bisque;
 }
