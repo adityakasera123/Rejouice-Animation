@@ -101,10 +101,11 @@ letter-spacing: -18px;
   border-bottom: 1px solid black;
 }
 
-#page2-content h3{
+
+#page2-try p{
   font-family: nb;
-text-align: center;
- line-height: 4.5vw;
-  font-size: 4.2vw;
-  font-weight: 200;
-}
+ text-indent: 101px; 
+ font-size: 4.2vw;
+  line-height: 5.2vw;
+  font-weight: 100;
+} 
