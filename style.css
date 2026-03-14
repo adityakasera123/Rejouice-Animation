@@ -67,7 +67,7 @@ letter-spacing: -18px;
 #cursor{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content : center;
   height: 85px;
   width: 85px;
   background-color: #ff5f38;
@@ -83,5 +83,28 @@ letter-spacing: -18px;
 #page2{
   height: 100vh;
   width: 100%;
-  background-color: bisque;
+  background-color:rgb(255,255,255);
+  padding: 3vw 2.8vw;
+}
+.nav2 h4{ 
+  font-size: 1.9vw;
+  font-weight: 500;
+  }
+#page2-top{
+  width: 93.8%;
+  margin-left: 40px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: -20px;
+  margin-bottom: 1vw;
+  border-bottom: 1px solid black;
+}
+
+#page2-content h3{
+  font-family: nb;
+text-align: center;
+ line-height: 4.5vw;
+  font-size: 4.2vw;
+  font-weight: 200;
 }
