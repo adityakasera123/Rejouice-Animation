@@ -76,7 +76,7 @@ letter-spacing: -18px;
   z-index: -1;
    transform: translate(-50%, -50%);
 }
-#cursor h2{
+#cursor h3{
   font-size: 1.3vw;
   color: #111;
 }
@@ -102,10 +102,20 @@ letter-spacing: -18px;
 }
 
 
-#page2-try p{
+#page2-content{
   font-family: nb;
- text-indent: 101px; 
  font-size: 4.2vw;
   line-height: 5.2vw;
   font-weight: 100;
 } 
+
+.line, .line1{
+    overflow: hidden;
+}
+
+.line span, .line1 span{
+    display: block;
+} 
+#page2-content .line1{
+ text-indent: 101px; 
+}
