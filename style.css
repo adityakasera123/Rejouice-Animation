@@ -105,7 +105,7 @@ letter-spacing: -18px;
 #page2-content{
   font-family: nb;
  font-size: 4.2vw;
-  line-height: 5.2vw;
+  line-height: 5vw;
   font-weight: 100;
 } 
 
@@ -118,4 +118,57 @@ letter-spacing: -18px;
 } 
 #page2-content .line1{
  text-indent: 101px; 
+}
+
+#page3{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 3vw;
+  /* background-color: aqua; */
+}
+#page3-top{
+  text-align: center;
+  /* background-color: red; */
+}
+
+#page3-top h4{
+  margin-bottom: 1vw;
+  font-size: 1.1vw;
+  font-weight: 500;
+}
+
+#page3-top h4 span{
+  font-size: 0.7vw;
+  padding: 5px 10px;
+  background-color: #111;
+  border-radius: 10px;
+  color: #fff;
+}
+
+#page3-top h2{
+  font-size: 4vw;
+  font-weight: 500;
+
+}
+
+#page3-elements{
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: red; */
+  margin-top: 7vw;
+}
+#page3-elements .box{
+  height: 100%;
+  width: 32.5%;
+  /* background-color: blue; */
+}
+#page3-elements .box video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
