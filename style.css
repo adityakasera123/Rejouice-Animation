@@ -40,19 +40,21 @@ color: white;
   justify-content: space-between;
  padding-bottom: 4vw;
 } 
-nav{
+.nav1{
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   padding: 3vw 3vw;
+
 }
-nav h3{
+.nav1 h3{
+  
   font-size: 1.4vw;
   font-family: nb;
   font-weight: 100;
 }
-nav h4{
+.nav h4{
   font-size: 1.4vw;
   font-weight: 100;
 }
@@ -85,6 +87,13 @@ letter-spacing: -18px;
   width: 100%;
   background-color:rgb(255,255,255);
   padding: 3vw 2.8vw;
+}
+.nav2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+width: 100%;
+  padding: 3vw 3vw;
 }
 .nav2 h4{ 
   font-size: 1.9vw;
@@ -165,10 +174,32 @@ letter-spacing: -18px;
   height: 100%;
   width: 32.5%;
   /* background-color: blue; */
+  position: relative;
 }
 #page3-elements .box video{
   height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: center;
+}
+#page3-elements .box img{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: all linear 0.7s;
+}
+#page3-elements .box:hover img{
+  opacity: 0;
+}
+#page4{
+  height: 100vh;
+  width: 100%;
+  /* background-color: rgba(222, 184, 135, 0.813); */
+  position: relative;
+}
+#page4 video{
+  height: 40vh;
+  width: 50vw;
 }
