@@ -75,7 +75,7 @@ gsap.from("#page2-content span",{
 }
 page2Animation();
 
-
+function page4Animation(){
 gsap.from("#page4-content span",{
   y:120,
   duration:1,
@@ -88,3 +88,34 @@ gsap.from("#page4-content span",{
     scrub:2,
   }
 })
+
+}
+page4Animation();
+
+var path = `M 10 100 Q 500 100 990 100`;
+var finalPath = `M 10 100 Q 500 100 990 100`;
+
+var string = document.querySelector("#string");
+
+string.addEventListener("mousemove", function (dets) {
+    var rect = string.getBoundingClientRect();
+
+    var x = dets.clientX - rect.left;
+    var y = dets.clientY - rect.top;
+
+    path = `M 10 100 Q ${x} ${y} 990 100`;
+
+    gsap.to("svg path", {
+        attr: { d: path },
+        duration: 0.3,
+        ease: "power3.out"
+    });
+});
+
+string.addEventListener("mouseleave", function () {
+    gsap.to("svg path", {
+        attr: { d: finalPath },
+        duration: 1.2,
+        ease: "elastic.out(1,0.2)"
+    });
+});
