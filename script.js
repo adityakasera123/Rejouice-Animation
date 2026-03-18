@@ -1,4 +1,5 @@
 
+
 function LocomotiveByCodepen(){
     gsap.registerPlugin(ScrollTrigger);
 
@@ -33,8 +34,9 @@ ScrollTrigger.refresh();
 LocomotiveByCodepen();
 
 function cursorEffect(){
-    let cursor = document.querySelector("#cursor");
-    let page1Content = document.querySelector("#page1-content");
+  let cursor = document.querySelector("#cursor");
+   let page1Content = document.querySelector("#page1-content");
+    let nav = document.querySelector(".nav1");
 
     page1Content.addEventListener("mousemove", function(dets){
         gsap.to(cursor,{
@@ -50,7 +52,9 @@ function cursorEffect(){
     page1Content.addEventListener("mouseleave",function(){
         gsap.to(cursor,{ scale:0 })
     })
-}
+
+
+  }
 cursorEffect();
 
 function page2Animation(){
@@ -70,3 +74,17 @@ gsap.from("#page2-content span",{
 
 }
 page2Animation();
+
+
+gsap.from("#page4-content span",{
+  y:120,
+  duration:1,
+  stagger:0.2,
+  scrollTrigger:{
+    trigger:"#page4",
+    scroller:"#main",
+    start:"top 69%",
+    end:"top 30%",
+    scrub:2,
+  }
+})
