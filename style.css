@@ -238,3 +238,50 @@ width: 100%;
   justify-content:center;
    /* background-color: #dbcdca; */
 }
+
+#page5{
+  height: 100vh;
+  width: 100%;
+  background-color: antiquewhite;
+  padding: 4vw 0;
+  position: relative;
+}
+#page5 h1{
+  font-size: 10vw;
+  font-family: nb;
+  font-weight: 200;
+  width: 96%;
+  margin-left: 2%;
+  border-bottom: 1px solid black;
+}
+#swipperdiv{
+  height: 60vh;
+  width: 100%;
+  background-color: #ff5f38;
+  position: relative;
+}
+.swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper {
+      margin-left: auto;
+      margin-right: auto;
+    }

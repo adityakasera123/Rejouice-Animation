@@ -92,6 +92,7 @@ gsap.from("#page4-content span",{
 }
 page4Animation();
 
+function stringAnimation(){
 var path = `M 10 100 Q 500 100 990 100`;
 var finalPath = `M 10 100 Q 500 100 990 100`;
 
@@ -119,3 +120,22 @@ string.addEventListener("mouseleave", function () {
         ease: "elastic.out(1,0.2)"
     });
 });
+}
+stringAnimation();
+
+function SwipperJs(){
+ var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  }
+  SwipperJs();
