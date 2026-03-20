@@ -2,6 +2,10 @@
   font-family: nb;
   src: url(./SuisseIntl-Regular.woff2);
 }
+@font-face {
+  font-family: nb1;
+  src: url(./SuisseIntl-Light.woff2);
+}
 
 * {
   margin: 0;
@@ -309,3 +313,110 @@ width: 100%;
     #loader h3{
       font-size: 2vw;
     }
+
+    #page6{
+    
+      height: 100vh;
+      width: 100%;
+      background-color: #ff5f38;
+      /* background-color: #111; */
+      padding: 5vw 4vw;
+    }
+    
+  
+#page6 nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+  font-family: nb;
+
+}
+
+
+#leftnav h2{
+  font-size: 2vw;
+  color: #fff;
+  font-weight:100;
+}
+
+#leftnav button{
+border-radius: 10px;
+  padding: 1.4vw 2.2vw;
+  margin-top: 2vw;
+  border: 0.1px solid rgb(161, 159, 159);
+  background-color: #111;
+  color: white;
+
+}
+
+
+#rightnav{
+  display: flex;
+  align-items: flex-start;
+  gap: 6vw;
+  color: #fff;
+  font-weight: 100;
+}
+
+#links{
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-end; */
+  gap: 0.2vw;
+}
+
+#social{
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#rightnav a{
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.2vw;
+  font-weight: lighter;
+}
+#rightnav #social{
+
+  justify-content: flex-start;
+}
+
+#leftnav h4{
+  margin-top: 11vw;
+  font-size: 1.3vw;
+  font-family: nb;
+  color: #fff;
+}
+
+#rightnav #links h5{
+  
+   margin-top: 12vw;
+  font-size: 1.3vw;
+  margin-right: 1vw;
+}
+#social h5{
+  margin-top: 16vw;
+  font-weight: 100;
+  font-size: 1.3vw;
+}
+#links h5{
+  color: #fff;
+}
+
+#page6 h1{
+  text-align: center;
+margin-top: -8vw;
+  font-size: 28vw;
+  font-weight:400;
+  color: #fff;
+letter-spacing: -10px;
+font-family: nb1;
+margin-left: -2vw;
+overflow-x: hidden;
+
+}
+
+#page6 h1 span{
+  display: inline-block;
+}

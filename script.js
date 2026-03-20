@@ -172,3 +172,23 @@ tl.to("#loader",{
 
 }
 loaderAnimation();
+
+
+function footerAnimation(){
+// gsap.registerPlugin(ScrollTrigger);
+gsap.from("#page6 span",{
+  y:120,
+  duration:2,
+  stagger:0.3,
+  scrollTrigger:{
+    trigger:"#page6",
+    scroller:"#main",
+    start:"top 62%",
+    end:"top 30%",
+    scrub:2,
+    // markers:true
+  }
+});
+}
+
+footerAnimation();
