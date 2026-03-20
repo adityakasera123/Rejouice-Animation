@@ -192,3 +192,19 @@ gsap.from("#page6 span",{
 }
 
 footerAnimation();
+
+
+function scrollEffect(){
+gsap.to("#page7 h1",{
+  x:"-170%",
+  scrollTrigger:{
+    trigger:"#page7",
+    scroller:"#main",
+    start:"top top",
+    end:"+=800%",
+    scrub:3,
+     pin:true
+  }
+})
+}
+scrollEffect();
