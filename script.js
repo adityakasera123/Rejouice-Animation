@@ -183,7 +183,7 @@ gsap.from("#page6 span",{
   scrollTrigger:{
     trigger:"#page6",
     scroller:"#main",
-    start:"top 62%",
+    start:"top -775%",
     end:"top 30%",
     scrub:2,
     // markers:true
@@ -203,8 +203,10 @@ gsap.to("#page7 h1",{
     start:"top top",
     end:"+=800%",
     scrub:3,
-     pin:true
+     pin:true,
+      anticipatePin:1 
   }
 })
 }
 scrollEffect();
+ScrollTrigger.refresh(); 
