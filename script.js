@@ -129,15 +129,25 @@ function slidesAnimation(){
       slidesPerView: 1,
       spaceBetween: 30,
       loop: true,
+      speed: 1200, // smooth transition
+  grabCursor: true,
       autoplay: {
-        delay: 2500,
-        disableOnInteraction: true,
+        delay: 2000,
+        disableOnInteraction: false,
       },
+       touchRatio: 1.8, // smooth swipe
+       resistanceRatio: 0.85,
+
+  observer: true,
+  observeParents: true,
     });
   }
   SwipperJs();
+  
 }
 slidesAnimation();
+
+
 
 
 function loaderAnimation(){
@@ -163,7 +173,7 @@ tl.from("#page1-content h1 span",{
   y:100,
   opacity:0,
   stagger:0.1,
-  duration:0.5,
+  duration:0.3,
   delay:-0.5
 })
 tl.to("#loader",{
